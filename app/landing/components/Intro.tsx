@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Arrow } from "./Arrow";
 import { Effiecient } from "./Efficient";
 import { Effortless } from "./Effortless";
@@ -56,7 +57,15 @@ export const Intro = () => {
 						`}
 					</p>
 				</div>
-				<div className="w-full h-full rounded-2xl bg-blue-500"></div>
+				<div className="w-full h-full rounded-2xl bg-blue-500">
+					<Image
+						alt="image"
+						src="/assets/imageTwo.png"
+						height={1000}
+						width={1000}
+						className="h-full w-full object-cover"
+					/>
+				</div>
 			</div>
 		</div>
 	);

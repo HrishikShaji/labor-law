@@ -38,3 +38,7 @@
 .shadow-three {
   box-shadow: 0 4px 4px rgba(53, 52, 76, 0.16);
 }
+
+.gradient {
+  background: linear-gradient(to bottom, #d64100 0%, #0c0b1d 100%);
+}

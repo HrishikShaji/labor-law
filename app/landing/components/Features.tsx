@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Arrow } from "./Arrow";
+import Image from "next/image";
 
 export const Features = () => {
 	return (
@@ -23,7 +24,15 @@ export const Features = () => {
 									Read More
 								</Link>
 							</div>
-							<div className="h-[250px] w-[200px] flex-shrink-0 rounded-md bg-black"></div>
+							<div className="h-[250px] w-[200px] flex-shrink-0 rounded-md ">
+								<Image
+									alt="image"
+									src="/assets/imageSeven.png"
+									height={1000}
+									width={1000}
+									className="h-full w-full object-contain"
+								/>
+							</div>
 						</div>
 						<div className="flex gap-4 h-full ">
 							<div className="p-10 rounded-2xl border-[1px] flex items-center w-[60%] border-[#D1DEF1]">
@@ -54,7 +63,15 @@ export const Features = () => {
 					</div>
 					<div className="w-[40%] flex flex-col gap-4">
 						<div className="rounded-2xl  border-[#D1DEF1] border-[1px] p-10 flex flex-col gap-4">
-							<div className="rounded-md bg-black h-[200px] w-full"></div>
+							<div className="rounded-md  h-[200px] w-full overflow-hidden">
+								<Image
+									alt="image"
+									src="/assets/imageEight.png"
+									height={1000}
+									width={1000}
+									className="h-full w-full object-cover"
+								/>
+							</div>
 							<div className="flex flex-col gap-4">
 								<h1 className="font-bold">RECORD MANAGEMENT:</h1>
 								<p className="w-[80%]">{`Legum.AI provides a record management feature on the platform ensuring that your confidential data is secure while`}</p>
@@ -77,7 +94,15 @@ export const Features = () => {
 									Read More
 								</Link>
 							</div>
-							<div className=" rounded-md bg-black w-[200px] h-[250px] flex-shrink-0"></div>
+							<div className=" rounded-md overflow-hidden bg-black w-[200px] h-[250px] flex-shrink-0">
+								<Image
+									alt="image"
+									src="/assets/imageNine.png"
+									height={1000}
+									width={1000}
+									className="h-full w-full object-cover"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

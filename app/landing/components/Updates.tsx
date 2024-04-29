@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Arrow } from "./Arrow";
+import Image from "next/image";
 
 export const Updates = () => {
 	return (
@@ -15,7 +16,15 @@ export const Updates = () => {
 			</div>
 			<div className="flex gap-4">
 				<div className="w-[60%] flex flex-col rounded-2xl overflow-hidden shadow-three">
-					<div className="w-full bg-black h-[400px]"></div>
+					<div className="w-full overflow-hidden h-[400px]">
+						<Image
+							alt="image"
+							src="/assets/imageTen.png"
+							height={1000}
+							width={1000}
+							className="h-full w-full object-cover"
+						/>
+					</div>
 					<div className="p-5 flex flex-col gap-4">
 						<span className="text-sm">Feb 19,2024</span>
 						<h1 className="font-bold">{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
@@ -27,14 +36,30 @@ export const Updates = () => {
 				</div>
 				<div className="flex w-[40%] flex-col gap-4">
 					<div className="w-full flex flex-col rounded-2xl overflow-hidden shadow-three">
-						<div className="w-full bg-black h-[200px]"></div>
+						<div className="w-full bg-black h-[200px]">
+							<Image
+								alt="image"
+								src="/assets/imageEleven.png"
+								height={1000}
+								width={1000}
+								className="h-full w-full object-cover"
+							/>
+						</div>
 						<div className="p-5 flex flex-col gap-4">
 							<span className="text-sm">Feb 19,2024</span>
 							<h1 className="font-bold">{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
 						</div>
 					</div>
 					<div className="w-full flex flex-col rounded-2xl overflow-hidden shadow-three">
-						<div className="w-full bg-black h-[200px]"></div>
+						<div className="w-full bg-black h-[200px]">
+							<Image
+								alt="image"
+								src="/assets/imageTwelve.png"
+								height={1000}
+								width={1000}
+								className="h-full w-full object-cover"
+							/>
+						</div>
 						<div className="p-5 flex flex-col gap-4">
 							<span className="text-sm">Feb 19,2024</span>
 							<h1 className="font-bold">{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>

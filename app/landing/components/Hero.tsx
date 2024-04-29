@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Hero = () => {
 	return (
 		<div className="h-screen px-10 w-full bg-[#00043C] text-white ">
@@ -18,7 +20,15 @@ export const Hero = () => {
 						Request a Demo
 					</button>
 				</div>
-				<div className="absolute bottom-0 right-0 h-[77%] w-[34%] bg-[#D64100] rounded-t-3xl"></div>
+				<div className="absolute bottom-0 right-0 h-[77%] overflow-hidden w-[34%] gradient rounded-t-3xl">
+					<Image
+						alt="image"
+						src="/assets/imageOne.png"
+						height={1000}
+						width={1000}
+						className="h-full w-full mt-4"
+					/>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Indeed } from "./Indeed";
 import { Instagram } from "./Instagram";
 import { X } from "./X";
@@ -21,7 +22,15 @@ export const Compliance = () => {
 							</button>
 						</div>
 					</div>
-					<div className="flex-shrink-0 h-[400px] w-[300px] rounded-xl bg-[#D64100]"></div>
+					<div className="flex-shrink-0 h-[400px] w-[300px] rounded-xl gradient">
+						<Image
+							alt="image"
+							src="/assets/imageThirteen.png"
+							height={1000}
+							width={1000}
+							className="h-full w-full object-cover"
+						/>
+					</div>
 				</div>
 				<div className="flex w-full items-center justify-between py-4">
 					<div className="flex flex-col gap-2">
