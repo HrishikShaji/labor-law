@@ -1,0 +1,38 @@
+.container {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.content p {
+  width: 75%;
+  line-height: 2;
+}
+
+.link {
+  color: #d64100;
+}
+
+.imageContainer {
+  width: 600px;
+  flex-shrink: 0;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,37 @@
+.container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: #f6f6f6;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.content p {
+  line-height: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  font-weight: 700;
+}
