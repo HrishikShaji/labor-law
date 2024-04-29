@@ -1,12 +1,6 @@
 export const Instagram = () => {
 	return (
-		<svg
-			width="80"
-			height="80"
-			viewBox="0 0 80 80"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
+		<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<rect x="0.5" y="0.5" width="79" height="79" rx="19.5" stroke="white" />
 			<rect x="0.5" y="0.5" width="79" height="79" rx="19.5" stroke="white" />
 			<g clip-path="url(#clip0_1918_5292)">

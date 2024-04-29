@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Arrow } from "./Arrow";
 
 export const Navbar = () => {
 	return (
@@ -11,23 +12,38 @@ export const Navbar = () => {
 				<div>
 					<Link href="/">Labour Codes</Link>
 				</div>
-				<div>
+				<div className="flex gap-1 items-center">
 					<Link href="/">Industries</Link>
+					<div className="w-5">
+						<Arrow />
+					</div>
 				</div>
 				<div>
 					<Link href="/">HR Dossier</Link>
 				</div>
-				<div>
+				<div className="flex gap-1 items-center">
 					<Link href="/">Services</Link>
+					<div className="w-5">
+						<Arrow />
+					</div>
 				</div>
-				<div>
+				<div className="flex gap-1 items-center">
 					<Link href="/">Products</Link>
+					<div className="w-5">
+						<Arrow />
+					</div>
 				</div>
-				<div>
+				<div className="flex gap-1 items-center">
 					<Link href="/">Resources</Link>
+					<div className="w-5">
+						<Arrow />
+					</div>
 				</div>
-				<div>
+				<div className="flex gap-1 items-center">
 					<Link href="/">Library</Link>
+					<div className="w-5">
+						<Arrow />
+					</div>
 				</div>
 			</div>
 			<div className="flex gap-4">

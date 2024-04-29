@@ -1,4 +1,7 @@
+import { Arrow } from "./Arrow";
 import { Effiecient } from "./Efficient";
+import { Effortless } from "./Effortless";
+import { Enhanced } from "./Enhanced";
 
 export const Intro = () => {
 	return (
@@ -13,14 +16,23 @@ export const Intro = () => {
 				fit your specific compliance requirements, keeping you ahead of the game
 				in managing labor law compliance.
 			`}</p>
-			<button className="px-5 py-2 bg-[#D64100] text-white rounded-3xl">
+			<button className="px-5 flex gap-1 items-center py-2 bg-[#D64100] text-white rounded-3xl">
 				Get Started
+				<div className="w-5 -rotate-90">
+					<Arrow />
+				</div>
 			</button>
 			<div className="flex gap-3">
-				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] p-3">
+				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">
+					<div className="w-10 mt-4">
+						<Effortless />
+					</div>
 					Effortless
 				</button>
-				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] p-3">
+				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">
+					<div className="w-10 mt-2">
+						<Enhanced />
+					</div>
 					Enhanced
 				</button>
 				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">

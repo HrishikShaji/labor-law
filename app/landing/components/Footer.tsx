@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Goto } from "./Goto";
+import { Legum } from "./Legum";
 
 export const Footer = () => {
 	return (
@@ -6,7 +8,9 @@ export const Footer = () => {
 			<div className="flex flex-col  h-full gap-6 text-[#00043C]">
 				<div className="flex  justify-evenly h-full gap-0">
 					<div className="flex flex-col gap-6 w-[20%]">
-						<h1 className="text-xl font-bold">Legum.ai</h1>
+						<div className="w-40">
+							<Legum />
+						</div>
 						<p className="text-sm ">
 							Lorem ipsum dolor sit amet, adipiscing elit. Donec tincidunt mi eu
 							enim semper accumsan.
@@ -48,8 +52,11 @@ export const Footer = () => {
 					<div className="h-[300px] w-[1px] bg-[#00043C]"></div>
 					<div className="flex flex-col gap-6 pl-10 pr-5">
 						<h1 className="text-xl font-bold">Help & Feedback</h1>
-						<button className="w-full py-3 rounded-md text-white bg-[#00043C]">
+						<button className="w-full items-center justify-between flex gap-1 p-3 rounded-md text-white bg-[#00043C]">
 							Contact Us
+							<div className="w-5">
+								<Goto />
+							</div>
 						</button>
 					</div>
 				</div>
