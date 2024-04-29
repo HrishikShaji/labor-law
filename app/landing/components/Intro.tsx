@@ -1,3 +1,5 @@
+import { Effiecient } from "./Efficient";
+
 export const Intro = () => {
 	return (
 		<div className="w-full h-full p-10 flex flex-col gap-10 items-center ">
@@ -21,7 +23,10 @@ export const Intro = () => {
 				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] p-3">
 					Enhanced
 				</button>
-				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] p-3">
+				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">
+					<div className="w-10 mt-4">
+						<Effiecient />
+					</div>
 					Efficient
 				</button>
 			</div>

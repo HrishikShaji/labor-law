@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Hellix-Bold";
+  src: url("../public/assets/Hellix-Bold.ttf");
+}
+@font-face {
+  font-family: "Hellix-Medium";
+  src: url("../public/assets/Hellix-Medium.ttf");
+}
+@font-face {
+  font-family: "Hellix-Regular";
+  src: url("../public/assets/Hellix-Regular.ttf");
+}
+
+.hellix-bold {
+  font-family: "Hellix-Bold";
+}
+
+.hellix-medium {
+  font-family: "Hellix-Medium";
+}
+
+.hellix-regular {
+  font-family: "Hellix-Regular";
+}

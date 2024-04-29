@@ -3,7 +3,7 @@ export const Hero = () => {
 		<div className="h-screen px-10 w-full bg-[#00043C] text-white ">
 			<div className="w-full h-full relative">
 				<div className="flex flex-col gap-6 w-[60%] pt-40 items-start">
-					<h1 className="text-[66px] leading-tight">
+					<h1 className="text-[66px] hellix-bold leading-tight">
 						Efficiency Driven <span className="text-[#D64100]">Compliance</span>{" "}
 						Management Solution
 					</h1>
