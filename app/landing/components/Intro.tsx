@@ -3,70 +3,77 @@ import { Arrow } from "./Arrow";
 import { Effiecient } from "./Efficient";
 import { Effortless } from "./Effortless";
 import { Enhanced } from "./Enhanced";
+import styles from "./Intro.module.css";
 
 export const Intro = () => {
-	return (
-		<div className="w-full h-full p-10 flex flex-col gap-10 items-center ">
-			<h1 className="text-[36px] font-bold leading-none">Why Choose Us</h1>
-			<p className="text-center w-[80%] leading-loose">{`
-				Choose Legum.AI for your labor law compliance needs because we bring
-				years of dedicated expertise to the table. Our platform offers precise
-				tracking, ensuring you're always up-to-date with the latest regulations.
-				With insightful analytics, Legum.AI provides you with the data you need
-				to make informed decisions. Plus, our tailored solutions are designed to
-				fit your specific compliance requirements, keeping you ahead of the game
-				in managing labor law compliance.
-			`}</p>
-			<button className="px-5 flex gap-1 items-center py-2 bg-[#D64100] text-white rounded-3xl">
-				Get Started
-				<div className="w-5 -rotate-90">
-					<Arrow />
-				</div>
-			</button>
-			<div className="flex gap-3">
-				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">
-					<div className="w-10 mt-4">
-						<Effortless />
-					</div>
-					Effortless
-				</button>
-				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">
-					<div className="w-10 mt-2">
-						<Enhanced />
-					</div>
-					Enhanced
-				</button>
-				<button className="w-[250px] flex items-center justify-center gap-2 text-xl font-bold rounded-md bg-[#FFF0DF] ">
-					<div className="w-10 mt-4">
-						<Effiecient />
-					</div>
-					Efficient
-				</button>
-			</div>
-			<div className="grid grid-cols-2 gap-6">
-				<div className="w-full p-10 rounded-2xl box flex flex-col justify-center gap-4">
-					<h1 className="text-xl font-bold">Effortless</h1>
-					<p className="leading-loose">
-						{`
+  return (
+    <div className={styles.intro}>
+      <h1 className={styles.title}>Why Choose Us</h1>
+      <p className={styles.description}>
+        {`
 
-						Our platform's intuitive interface ensures easy navigation, while
-						its streamlined design provides quick access to essential features.
-						With simplified document organization, managing compliance documents
-						becomes effortless. Stay on track with proactive notifications for
-						upcoming tasks and deadlines.
+        Choose Legum.AI for your labor law compliance needs because we bring
+        years of dedicated expertise to the table. Our platform offers precise
+        tracking, ensuring you're always up-to-date with the latest regulations.
+        With insightful analytics, Legum.AI provides you with the data you need
+        to make informed decisions. Plus, our tailored solutions are designed to
+        fit your specific compliance requirements, keeping you ahead of the game
+        in managing labor law compliance.
+				`}
+      </p>
+      <button className={styles.button}>
+        Get Started
+        <div className={styles.arrow}>
+          <Arrow color="white" />
+        </div>
+      </button>
+      <div className={styles.features}>
+        <button className={styles.feature}>
+          <div style={{ marginTop: "10px" }} className={styles.icon}>
+            <Effortless />
+          </div>
+          <span className={styles.text}>Effortless</span>
+        </button>
+        <button className={styles.feature}>
+          <div className={styles.icon}>
+            <Enhanced />
+          </div>
+          <span className={styles.text}>Enhanced</span>
+        </button>
+        <button className={styles.feature}>
+          <div
+            style={{ marginTop: "10px", marginRight: "10px" }}
+            className={styles.icon}
+          >
+            <Effiecient />
+          </div>
+          <span className={styles.text}>Efficient</span>
+        </button>
+      </div>
+      <div className={styles.grid}>
+        <div className={styles.content}>
+          <h1 className={styles.subtitle}>Effortless</h1>
+          <p className={styles.contentDescription}>
+            {`
+
+            Our platform's intuitive interface ensures easy navigation, while
+            its streamlined design provides quick access to essential features.
+            With simplified document organization, managing compliance documents
+            becomes effortless. Stay on track with proactive notifications for
+            upcoming tasks and deadlines.
 						`}
-					</p>
-				</div>
-				<div className="w-full h-full rounded-2xl bg-blue-500">
-					<Image
-						alt="image"
-						src="/assets/imageTwo.png"
-						height={1000}
-						width={1000}
-						className="h-full w-full object-cover"
-					/>
-				</div>
-			</div>
-		</div>
-	);
+          </p>
+        </div>
+        <div className={styles.imageContainer}>
+          <Image
+            height={1000}
+            width={1000}
+            src="/assets/imageTwo.png"
+            alt="Image"
+            className={styles.image}
+          />
+        </div>
+      </div>
+    </div>
+  );
 };

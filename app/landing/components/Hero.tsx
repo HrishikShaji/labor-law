@@ -1,35 +1,29 @@
 import Image from "next/image";
+import styles from "./Hero.module.css";
 
 export const Hero = () => {
-	return (
-		<div className="h-screen px-10 w-full bg-[#00043C] text-white ">
-			<div className="w-full h-full relative">
-				<div className="flex flex-col gap-6 w-[60%] pt-40 items-start">
-					<h1 className="text-[66px] hellix-bold leading-tight">
-						Efficiency Driven <span className="text-[#D64100]">Compliance</span>{" "}
-						Management Solution
-					</h1>
-					<p className="text-[20px] w-[80%]">
-						Legum.ai can improve the Compliance Management process by improving
-						reaction and adoption times, which will minimize fines and
-						compliance risks. The platform ability will be top process and
-						analyze data at unprecedented speed and significantly it will
-						enhance the efficiency of regulatory compliance efforts.
-					</p>
-					<button className="px-5 py-2 mt-4 rounded-3xl bg-[#D64100]">
-						Request a Demo
-					</button>
-				</div>
-				<div className="absolute bottom-0 right-0 h-[77%] overflow-hidden w-[34%] gradient rounded-t-3xl">
-					<Image
-						alt="image"
-						src="/assets/imageOne.png"
-						height={1000}
-						width={1000}
-						className="h-full w-full mt-4"
-					/>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className={styles.hero}>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>
+            Efficiency Driven{" "}
+            <span className={styles.highlight}>Compliance</span> Management
+            Solution
+          </h1>
+          <p className={styles.description}>
+            Legum.ai can improve the Compliance Management process by improving
+            reaction and adoption times, which will minimize fines and
+            compliance risks. The platform ability will be top process and
+            analyze data at unprecedented speed and significantly it will
+            enhance the efficiency of regulatory compliance efforts.
+          </p>
+          <button className={styles.btn}>Request a Demo</button>
+        </div>
+        <div className={styles.image}>
+          <img src="/assets/imageOne.png" alt="image" />
+        </div>
+      </div>
+    </div>
+  );
 };

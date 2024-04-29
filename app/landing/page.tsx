@@ -8,19 +8,18 @@ import { Navbar } from "./components/Navbar";
 import { Updates } from "./components/Updates";
 
 const Page = () => {
-	return (
-		<div className="w-full  h-full flex flex-col">
-			<Navbar />
-			<Hero />
-			<Intro />
-			<AwardsAndRecognitions />
-			<Features />
-			<Updates />
-			<Compliance />
-
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <Intro />
+      <AwardsAndRecognitions />
+      <Features />
+      <Updates />
+      <Compliance />
+      <Footer />
+    </div>
+  );
 };
 
 export default Page;

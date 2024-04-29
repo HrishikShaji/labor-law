@@ -1,0 +1,50 @@
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: #00043c;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.menuItems {
+  display: flex;
+  gap: 20px;
+}
+
+.menuItems > div,
+.actions > button {
+  padding: 1px 1px;
+}
+
+.submenu {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+
+.submenu .arrow {
+  width: 20px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions .registerBtn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  background-color: #d64100;
+  color: white;
+}

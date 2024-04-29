@@ -1,72 +1,81 @@
 import Link from "next/link";
 import { Arrow } from "./Arrow";
 import Image from "next/image";
+import styles from "./Updates.module.css";
 
 export const Updates = () => {
-	return (
-		<div className="h-full w-full p-10 flex flex-col gap-4">
-			<div className="flex w-full justify-between items-center">
-				<h1 className="text-[36px] font-bold">Compliance Updates</h1>
-				<button className="rounded-3xl flex gap-1 items-center px-5 py-2 border-black border-[1px]">
-					See All News & Updates
-					<div className="w-5  -rotate-90">
-						<Arrow color="black" />
-					</div>
-				</button>
-			</div>
-			<div className="flex gap-4">
-				<div className="w-[60%] flex flex-col rounded-2xl overflow-hidden shadow-three">
-					<div className="w-full overflow-hidden h-[400px]">
-						<Image
-							alt="image"
-							src="/assets/imageTen.png"
-							height={1000}
-							width={1000}
-							className="h-full w-full object-cover"
-						/>
-					</div>
-					<div className="p-5 flex flex-col gap-4">
-						<span className="text-sm">Feb 19,2024</span>
-						<h1 className="font-bold">{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
-						<p className="text-sm">{`Lorem ipsum dolor sit amet,  adipiscing elit. Donec tincidunt mi eu enim semper accumsan. Fusce vulputate neque eget dui vulputate, sed tristique diam pulvinar.`}</p>
-						<Link className="underline underline-offset-2" href="/">
-							Read More
-						</Link>
-					</div>
-				</div>
-				<div className="flex w-[40%] flex-col gap-4">
-					<div className="w-full flex flex-col rounded-2xl overflow-hidden shadow-three">
-						<div className="w-full bg-black h-[200px]">
-							<Image
-								alt="image"
-								src="/assets/imageEleven.png"
-								height={1000}
-								width={1000}
-								className="h-full w-full object-cover"
-							/>
-						</div>
-						<div className="p-5 flex flex-col gap-4">
-							<span className="text-sm">Feb 19,2024</span>
-							<h1 className="font-bold">{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
-						</div>
-					</div>
-					<div className="w-full flex flex-col rounded-2xl overflow-hidden shadow-three">
-						<div className="w-full bg-black h-[200px]">
-							<Image
-								alt="image"
-								src="/assets/imageTwelve.png"
-								height={1000}
-								width={1000}
-								className="h-full w-full object-cover"
-							/>
-						</div>
-						<div className="p-5 flex flex-col gap-4">
-							<span className="text-sm">Feb 19,2024</span>
-							<h1 className="font-bold">{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className={styles.container}>
+      <div className={styles.headingContainer}>
+        <h1>Compliance Updates</h1>
+        <button>
+          See All News & Updates
+          <div className={styles.arrow}>
+            <Arrow color="black" />
+          </div>
+        </button>
+      </div>
+      <div className={styles.innerContainer}>
+        <div className={styles.cardOne}>
+          <div className={styles.imageOne}>
+            <Image
+              alt="image"
+              src="/assets/imageTen.png"
+              height={1000}
+              width={1000}
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.cardContent}>
+            <span className={styles.date}>Feb 19,2024</span>
+            <h1
+              className={styles.title}
+            >{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
+            <p
+              className={styles.description}
+            >{`Lorem ipsum dolor sit amet,  adipiscing elit. Donec tincidunt mi eu enim semper accumsan. Fusce vulputate neque eget dui vulputate, sed tristique diam pulvinar.`}</p>
+            <Link className="underline underline-offset-2" href="/">
+              Read More
+            </Link>
+          </div>
+        </div>
+        <div className={styles.rightContainer}>
+          <div className={styles.cardTwo}>
+            <div className={styles.imageTwo}>
+              <Image
+                alt="image"
+                src="/assets/imageEleven.png"
+                height={1000}
+                width={1000}
+                className={styles.image}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <span className={styles.date}>Feb 19,2024</span>
+              <h1
+                className={styles.title}
+              >{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
+            </div>
+          </div>
+          <div className={styles.cardTwo}>
+            <div className={styles.imageTwo}>
+              <Image
+                alt="image"
+                src="/assets/imageTwelve.png"
+                height={1000}
+                width={1000}
+                className={styles.image}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <span className={styles.date}>Feb 19,2024</span>
+              <h1
+                className={styles.title}
+              >{`Lorem ipsum dolor sit amet,  adipiscing elit.`}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };

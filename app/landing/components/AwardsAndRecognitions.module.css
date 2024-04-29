@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f0f0f0;
+}
+
+.imageContainer {
+  height: 150px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.date {
+  font-size: 0.875rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  line-height: 1.5;
+}
+
+.button {
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #fff;
+}
