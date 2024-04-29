@@ -26,3 +26,15 @@
 .hellix-regular {
   font-family: "Hellix-Regular";
 }
+
+.box {
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.14);
+}
+
+.shadow-two {
+  box-shadow: 0 22px 44px rgba(255, 232, 206, 100);
+}
+
+.shadow-three {
+  box-shadow: 0 4px 4px rgba(53, 52, 76, 0.16);
+}

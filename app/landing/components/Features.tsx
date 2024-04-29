@@ -4,7 +4,7 @@ import { Arrow } from "./Arrow";
 export const Features = () => {
 	return (
 		<div className="w-full h-full p-10 ">
-			<div className="flex flex-col gap-5 py-5 items-center shadow-sm shadow-gray-500">
+			<div className="flex flex-col gap-5 py-5 items-center shadow-two rounded-2xl">
 				<div className="p-5 rounded-md  gap-4 flex">
 					<div className="w-[60%] flex flex-col gap-4">
 						<h1 className="text-[36px] w-[60%] font-bold">

@@ -43,7 +43,7 @@ export const Intro = () => {
 				</button>
 			</div>
 			<div className="grid grid-cols-2 gap-6">
-				<div className="w-full p-10 rounded-2xl shadow-sm shadow-gray-500 flex flex-col justify-center gap-4">
+				<div className="w-full p-10 rounded-2xl box flex flex-col justify-center gap-4">
 					<h1 className="text-xl font-bold">Effortless</h1>
 					<p className="leading-loose">
 						{`

@@ -5,7 +5,7 @@ import { X } from "./X";
 export const Compliance = () => {
 	return (
 		<div className="px-5">
-			<div className="w-full rounded-l-2xl bg-[#0B091C] text-white p-5 pl-10 flex flex-col">
+			<div className="w-full shadow-two rounded-l-2xl bg-[#0B091C] text-white p-5 pl-10 flex flex-col">
 				<div className="flex gap-5  py-5 items-center border-b-[1px] border-white">
 					<div className="flex flex-col gap-5 ">
 						<h1 className="text-[60px] leading-none font-bold w-[80%]">
