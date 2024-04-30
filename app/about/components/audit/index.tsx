@@ -12,22 +12,25 @@ const Audit = () => {
 					Read more
 				</Link>
 			</div>
-			<div className={styles.imageContainer}>
-				<Image
-					className={styles.imageOne}
-					src="/assets/imageEighteen.png"
-					height={1000}
-					width={1000}
-					alt="image"
-				/>
-				<Image
-					className={styles.imageTwo}
-					src="/assets/imageSeventeen.png"
-					height={1000}
-					width={1000}
-					alt="image"
-				/>
+			<div>
+				<div className={styles.imageContainer}>
+					<Image
+						className={styles.imageOne}
+						src="/assets/imageEighteen.png"
+						height={1000}
+						width={1000}
+						alt="image"
+					/>
+					<Image
+						className={styles.imageTwo}
+						src="/assets/imageSeventeen.png"
+						height={1000}
+						width={1000}
+						alt="image"
+					/>
+				</div>
 			</div>
+			<div className={styles.extraContainer}></div>
 		</div>
 	);
 };

@@ -4,10 +4,12 @@
   align-items: center;
   gap: 100px;
   position: relative;
+  background: #f6f6f7;
 }
 
 .imageContainer {
-  width: 100%;
+  flex-shrink: 0;
+  width: 550px;
   height: 100%;
   position: relative;
 }
@@ -15,24 +17,6 @@
 .imageOne {
   width: 100%;
   height: 100%;
-}
-
-.imageTwo {
-  z-index: -10;
-  height: 50%;
-  position: absolute;
-  top: 0px;
-  width: 50%;
-}
-
-.extraContainer {
-  position: absolute;
-  z-index: -10;
-  right: 0px;
-  bottom: 0px;
-  background: #f1f2fc;
-  width: 35%;
-  height: 70%;
 }
 
 .content {

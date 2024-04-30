@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  background: #00043c;
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 80px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.formContainer {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  z-index: 10;
+}
+.rectangle {
+  position: absolute;
+  z-index: -10;
+  left: 40px;
+  top: 40px;
+  width: 100%;
+  height: 100%;
+  background: #d64100;
+}
+
+.formContainer form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+  background: white;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item input {
+  border-color: black;
+  border-width: 0px 0px 1px 0px;
+}
+
+.lastRow {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: start;
+}
+
+.radioContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  background: #d64100;
+  padding: 8px 20px 8px 20px;
+}
