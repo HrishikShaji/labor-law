@@ -34,7 +34,7 @@ const Updates = () => {
 						<p
 							className={styles.description}
 						>{`Lorem ipsum dolor sit amet,  adipiscing elit. Donec tincidunt mi eu enim semper accumsan. Fusce vulputate neque eget dui vulputate, sed tristique diam pulvinar.`}</p>
-						<Link className="underline underline-offset-2" href="/">
+						<Link className={styles.link} href="/">
 							Read More
 						</Link>
 					</div>

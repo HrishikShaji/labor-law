@@ -1,5 +1,5 @@
 .container {
-  padding: 100px;
+  padding: 100px 100px 100px 0px;
   display: flex;
   align-items: center;
   gap: 100px;
@@ -7,13 +7,29 @@
 }
 
 .imageContainer {
-  flex-shrink: 0;
-  width: 550px;
+  width: 400px;
   height: 100%;
   position: relative;
 }
 
+.leftContainer {
+  background: #e3edfd;
+  padding: 100px 150px 100px 100px;
+}
+
 .imageOne {
+  width: 100%;
+  height: 100%;
+}
+
+.imageTwoContainer {
+  width: 260px;
+  position: absolute;
+  top: 65%;
+  left: 64%;
+}
+
+.imageTwo {
   width: 100%;
   height: 100%;
 }

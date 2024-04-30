@@ -5,7 +5,7 @@ import Image from "next/image";
 const UserPermission = () => {
 	return (
 		<div className={styles.container}>
-			<div>
+			<div className={styles.leftContainer}>
 				<div className={styles.imageContainer}>
 					<Image
 						className={styles.imageOne}
@@ -14,9 +14,17 @@ const UserPermission = () => {
 						width={1000}
 						alt="image"
 					/>
+					<div className={styles.imageTwoContainer}>
+						<Image
+							className={styles.imageTwo}
+							src="/assets/imageTwentyfive.png"
+							height={1000}
+							width={1000}
+							alt="image"
+						/>
+					</div>
 				</div>
 			</div>
-			<div className={styles.extraContainer}></div>
 			<div className={styles.content}>
 				<h1>User Permission</h1>
 				<p>{`  Legum.AI  offers a feature allowing only authorized users to access the  data on the  platform. This enables the maintenance of the security of the data stored in the platform along  with enabling complete access when required only to the authorized users from the  management.`}</p>

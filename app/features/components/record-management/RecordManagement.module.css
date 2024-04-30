@@ -32,6 +32,16 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
+  gap: 50px;
   font-weight: 700;
+}
+
+.grid div {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 30px;
 }

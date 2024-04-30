@@ -31,6 +31,7 @@
 }
 
 .firstColumn p {
+  font-family: "Hellix-Regular";
   font-size: 14px;
 }
 
@@ -42,6 +43,7 @@
 }
 
 .column h1 {
+  font-family: "Hellix-Bold";
   font-size: 20px;
   font-weight: 700;
 }
@@ -57,7 +59,7 @@
 .divider {
   height: 300px;
   width: 1px;
-  background: black;
+  background: #00043c;
 }
 .lastColumn {
   display: flex;
@@ -67,6 +69,7 @@
 }
 
 .lastColumn h1 {
+  font-family: "Hellix-Bold";
   font-size: 20px;
   font-weight: 700;
 }

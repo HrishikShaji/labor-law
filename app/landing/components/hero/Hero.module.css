@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  padding: 0 40px;
+  padding: 0 150px;
   background-color: #00043c;
   color: white;
 }
@@ -13,14 +13,19 @@
 }
 
 .content {
-  margin-top: 100px;
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: start;
+  width: 55%;
+  gap: 30px;
 }
 
 .title {
-  font-size: 66px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 1.2;
+  font-family: "Hellix-Bold";
 }
 
 .highlight {
@@ -30,9 +35,11 @@
 .description {
   font-size: 20px;
   width: 80%;
+  font-family: "Hellix-Regular";
 }
 
 .btn {
+  font-family: "Hellix-Medium";
   padding: 10px 20px;
   margin-top: 20px;
   border-radius: 30px;
@@ -42,12 +49,11 @@
 }
 
 .image {
-  width: 34%;
   height: 77%;
   overflow: hidden;
   position: absolute;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
   bottom: 0px;
   right: 0px;
   background: linear-gradient(to bottom, #d64100 0%, #0c0b1d 100%);
@@ -56,6 +62,5 @@
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin-top: 10px;
 }

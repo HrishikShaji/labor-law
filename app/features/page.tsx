@@ -1,4 +1,5 @@
 import Compliance from "../landing/components/compliance";
+import Footer from "../landing/components/footer";
 import Navbar from "../landing/components/navbar";
 import Audit from "./components/audit";
 import ComplianceTracking from "./components/compliance-tracking";
@@ -30,6 +31,8 @@ const Page = () => {
 			<Dashboard />
 			<Compliance />
 			<ContactForm />
+			<Footer />
+
 		</div>
 	);
 };

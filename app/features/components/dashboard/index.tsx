@@ -5,7 +5,6 @@ import Image from "next/image";
 const Dashboard = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.extraContainer}></div>
 			<div className={styles.content}>
 				<h1>Dashboard</h1>
 				<p>{`    Legum.AI platform features a comprehensive dashboard with accurate analysis, including  statistics and graphs, providing users with a quick and detailed overview of their compliance  status.  

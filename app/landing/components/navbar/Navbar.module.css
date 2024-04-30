@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  padding: 20px 40px;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,12 +17,13 @@
 
 .menuItems {
   display: flex;
-  gap: 20px;
+  gap: 14px;
 }
 
 .menuItems > div,
 .actions > button {
   padding: 1px 1px;
+  font-family: "Hellix-Medium";
 }
 
 .submenu {
@@ -44,7 +45,8 @@
 
 .actions .registerBtn {
   border-radius: 30px;
-  padding: 8px 20px;
+  height: 40px;
+  width: 130px;
   background-color: #d64100;
   color: white;
 }

@@ -1,22 +1,28 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
+  padding: 20px 60px;
+  display: flex;
+  gap: 40px;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
 }
 
 .box {
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: #f0f0f0;
+  gap: 12px;
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.14);
 }
 
 .imageContainer {
   height: 150px;
-  width: 100%;
+  width: 200px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -31,16 +37,31 @@
   font-size: 0.875rem;
 }
 
+.headerTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #35344c;
+}
+
+.mainDesc {
+  line-height: 2;
+}
+
 .title {
   font-size: 1.25rem;
   font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+}
+
+.rightContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
 .description {
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 .button {
@@ -50,4 +71,31 @@
   width: 100%;
   cursor: pointer;
   background-color: #fff;
+}
+
+.dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dots div {
+  height: 8px;
+  width: 8px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.card {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

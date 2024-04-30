@@ -9,7 +9,7 @@
 
 .imageContainer {
   flex-shrink: 0;
-  width: 550px;
+  width: 700px;
   height: 100%;
   position: relative;
 }
@@ -31,7 +31,6 @@
 }
 
 .content p {
-  width: 75%;
   line-height: 2;
 }
 
