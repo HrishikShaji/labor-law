@@ -1,0 +1,17 @@
+.gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 21%,
+    rgba(0, 0, 0, 100) 72%
+  );
+  height: 50%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+}
+
+.image {
+  filter: grayscale(100%);
+  object-fit: cover;
+}

@@ -6,16 +6,16 @@ import Hero from "./components/hero";
 import Team from "./components/team";
 
 const Page = () => {
-	return (
-		<div>
-			<Navbar />
-			<Hero />
-			<Team />
-			<ContactForm />
-			<Compliance />
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <Team />
+      <Compliance />
+      <ContactForm />
+      <Footer />
+    </div>
+  );
 };
 
 export default Page;

@@ -18,12 +18,13 @@
 }
 
 .content h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
 }
 
 .content p {
-  width: 80%;
+  width: 90%;
+  font-size: 25px;
 }
 
 .buttons {
@@ -34,7 +35,8 @@
 
 .buttonOne {
   border-radius: 1.5rem;
-  padding: 8px 20px 8px 20px;
+  width: 150px;
+  padding: 8px 0px 8px 0px;
   border-color: white;
   border-width: 1px;
 }
@@ -42,7 +44,8 @@
 .buttonTwo {
   border-radius: 1.5rem;
   background: #d64100;
-  padding: 8px 20px 8px 20px;
+  width: 150px;
+  padding: 8px 0px 8px 0px;
 }
 
 .imageContainer {
